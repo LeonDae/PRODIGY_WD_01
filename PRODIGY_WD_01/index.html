@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Menu Website demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="submenu-parent"><a href="#about">About</a>
+                    <ul class="submenu">
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#history">Our History</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-parent"><a href="#services">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#webdesign">Web Design</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Home</h1>
+            <p>Welcome to my first Interactive Menu Website</p>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>Hover over to the tabs and see the changes in colour</p>
+        </section>
+        <section id="services">
+            <h1>Services</h1>
+            <p>Discover our services.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Get in touch with us.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

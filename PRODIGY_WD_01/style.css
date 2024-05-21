@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+nav.scrolled {
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 238, 255);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c10;
+}
+
+.submenu-parent:hover .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000302;
+    padding: 10px 0;
+    list-style: none;
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding-top: 70px;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#home { background-color: #e7893c; }
+#about { background-color: #0b3a5a; }
+#services { background-color: #8b31af; }
+#contact { background-color: #e49a9a; }
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
